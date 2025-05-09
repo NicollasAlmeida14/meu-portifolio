@@ -23,22 +23,22 @@ function MyCertificates() {
 
                 <CerticateCard>
                     <img src={FirstCerticate} />
-                    <SubTitle>Certificado - DevClub</SubTitle>
+                    <SubTitle>DevClub</SubTitle>
                 </CerticateCard>
 
                 <CerticateCard>
                     <img src={SecondCertificate} />
-                    <SubTitle>Certificado - DevClub</SubTitle>
+                    <SubTitle>DevClub</SubTitle>
                 </CerticateCard>
 
                 <CerticateCard>
                     <img src={ThirdCerticate} />
-                    <SubTitle>Certificado - DevClub</SubTitle>
+                    <SubTitle>DevClub</SubTitle>
                 </CerticateCard>
 
                 <CerticateCard>
                     <img src={FourthCerticate} />
-                    <SubTitle>Certificado - DevClub</SubTitle>
+                    <SubTitle>DevClub</SubTitle>
                 </CerticateCard>
 
             </CertificatesContainer>
