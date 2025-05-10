@@ -30,10 +30,12 @@ export const Button = styled.button`
            &:hover {
                 box-shadow: none;
                 transform: none;
+                opacity: 1;
             }
 
             &:active {
                 transform: none;
+                opacity: 1;
             }
         }
 
