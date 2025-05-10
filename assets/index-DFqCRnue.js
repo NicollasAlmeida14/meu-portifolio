@@ -308,10 +308,12 @@ Please change the parent <Route path="${Z}"> to <Route path="${Z==="/"?"*":`${Z}
            &:hover {
                 box-shadow: none;
                 transform: none;
+                opacity: 1;
             }
 
             &:active {
                 transform: none;
+                opacity: 1;
             }
         }
 
