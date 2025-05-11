@@ -36,8 +36,8 @@ function Home() {
 
   const handleDownload = () => {
     const link = document.createElement('a')
-    link.href = '/curriculo-atualizado.pdf'
-    link.download = 'Nicollas_Almeida_Lopes Desenvolvedor_Front-End.pdf'
+    link.href = ''
+    link.download = ''
     document.body.appendChild(link)
     link.click()
     document.body.removeChild(link)
