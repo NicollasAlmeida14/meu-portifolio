@@ -1,6 +1,5 @@
-import { CerticateCard, CertificatesContainer, Container, SubTitle } from "./styles";
+import { CerticateCard, CertificatesContainer, Container, SubTitle, Title } from "./styles";
 
-import Title from "../../components/Title";
 import Button from "../../components/Button";
 
 import FirstCerticate from "../../assets/certificado-html-css.png"
@@ -16,7 +15,7 @@ function MyCertificates() {
     return (
         <Container>
 
-            <Title phrases={['Área de certificados']} />
+            <Title>Área de <span>Certificados</span></Title>
             <Button theme={'primary'} type="buttton" onClick={() => navigate('/')}>Página Incial</Button>
 
             <CertificatesContainer>

@@ -1,11 +1,11 @@
-import { Title } from "./styles"
+import { DynamicTitle } from "./styles"
 import { Typewriter } from "react-simple-typewriter"
 
 
-function DefaultTitle({phrases}) {
+function DefaultTitle({ phrases }) {
 
     return (
-        <Title>
+        <DynamicTitle>
             <Typewriter
                 words={phrases}
                 loop={0}
@@ -15,7 +15,7 @@ function DefaultTitle({phrases}) {
                 deleteSpeed={60}
                 delaySpeed={1500}
             />
-        </Title>
+        </DynamicTitle>
     )
 }
 

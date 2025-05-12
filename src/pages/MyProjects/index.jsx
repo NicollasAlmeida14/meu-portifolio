@@ -1,6 +1,5 @@
-import { Container, ProjectCard, ProjectsContainer, SubTitle } from "./styles"
+import { Container, ProjectCard, ProjectsContainer, SubTitle, Title } from "./styles"
 
-import Title from "../../components/Title"
 import Button from "../../components/Button"
 
 import { useNavigate } from "react-router-dom"
@@ -23,7 +22,7 @@ function MyProjects() {
     return (
         <Container>
 
-            <Title phrases={['Área de projetos']} />
+           <Title>Área de <span>Projetos</span></Title>
             <Button type="button" theme={'primary'} onClick={() => navigate('/')}>Página inicial</Button>
 
             <ProjectsContainer>

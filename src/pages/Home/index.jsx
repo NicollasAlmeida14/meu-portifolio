@@ -24,8 +24,9 @@ import Logo from "../../assets/logo.png"
 
 import MyFoto from "../../assets/nicollas.png"
 
-import Title from "../../components/Title"
+
 import Button from "../../components/Button"
+import DynamicTitle from "../../components/DynamicTitle"
 
 function Home() {
   const navigate = useNavigate()
@@ -66,7 +67,7 @@ function Home() {
 
       <Header>
         <img src={Logo} style={{ width: "125px", height: "125px" }} />
-        <Title phrases={['Bem-vindos ao meu portifólio!', 'Foi feito com muito carinho!', 'Espero que gostem!']} />
+        <DynamicTitle phrases={['Bem-vindos ao meu portifólio!', 'Foi feito com muito carinho!', 'Espero que gostem!']} />
       </Header>
 
       <Nav>

@@ -1,6 +1,5 @@
-import { BackEndContainer, Container, FrontEndContainer, SubTitle, SkillsContainer } from "./styles"
+import { BackEndContainer, Container, FrontEndContainer, SubTitle, SkillsContainer, Title } from "./styles"
 
-import Title from "../../components/Title"
 import Button from "../../components/Button"
 
 import { useNavigate } from "react-router-dom"
@@ -18,8 +17,8 @@ function MySkills() {
 
     return (
         <Container>
-            <Title phrases={['Conheça minhas habilidades!']} />
 
+            <Title>Área de <span>Habilidades</span></Title>
             <Button theme={'primary'} onClick={() => navigate('/')}>Página Inicial</Button>
 
             <SkillsContainer>
