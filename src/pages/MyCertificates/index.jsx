@@ -1,6 +1,7 @@
-import { CerticateCard, CertificatesContainer, Container, SubTitle, Title } from "./styles";
+import { CerticateCard, CertificatesContainer, Container, SubTitle } from "./styles";
 
 import Button from "../../components/Button";
+import DynamicTitle from "../../components/DynamicTitle";
 
 import FirstCerticate from "../../assets/certificado-html-css.png"
 import SecondCertificate from "../../assets/certificado-js-intermediario.png"
@@ -15,7 +16,7 @@ function MyCertificates() {
     return (
         <Container>
 
-            <Title>Área de <span>Certificados</span></Title>
+            <DynamicTitle phrases={['Área de Certificados']} />
             <Button theme={'primary'} type="buttton" onClick={() => navigate('/')}>Página Incial</Button>
 
             <CertificatesContainer>

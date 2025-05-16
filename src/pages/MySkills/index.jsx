@@ -1,6 +1,7 @@
-import { BackEndContainer, Container, FrontEndContainer, SubTitle, SkillsContainer, Title } from "./styles"
+import { BackEndContainer, Container, FrontEndContainer, SubTitle, SkillsContainer } from "./styles"
 
 import Button from "../../components/Button"
+import DynamicTitle from "../../components/DynamicTitle"
 
 import { useNavigate } from "react-router-dom"
 
@@ -11,14 +12,13 @@ import ReactLogo from "../../assets/react.png"
 import NodeJsLogo from "../../assets/nodejs.png"
 import MongodbLogo from "../../assets/mongodb.png"
 
-
 function MySkills() {
     const navigate = useNavigate()
 
     return (
         <Container>
 
-            <Title>Área de <span>Habilidades</span></Title>
+            <DynamicTitle phrases={['Área de Habilidades']} />
             <Button theme={'primary'} onClick={() => navigate('/')}>Página Inicial</Button>
 
             <SkillsContainer>

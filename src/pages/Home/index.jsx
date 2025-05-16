@@ -24,7 +24,6 @@ import Logo from "../../assets/logo.png"
 
 import MyFoto from "../../assets/nicollas.png"
 
-
 import Button from "../../components/Button"
 import DynamicTitle from "../../components/DynamicTitle"
 

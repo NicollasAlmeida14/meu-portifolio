@@ -10,20 +10,6 @@ export const Container = styled.div`
         padding: 20px;
 `
 
-export const Title = styled.h1`
-    text-align: center;
-    font-size: 2.5rem;
-    padding: 20px;
-
-    span {
-        color: #00F0FF;
-    }
-
-    @media (max-width: 1025px) {
-        font-size: 2rem;
-    }
-`
-
 export const CertificatesContainer = styled.div`
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

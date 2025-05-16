@@ -1,6 +1,7 @@
-import { Container, ProjectCard, ProjectsContainer, SubTitle, Title } from "./styles"
+import { Container, ProjectCard, ProjectsContainer, SubTitle } from "./styles"
 
 import Button from "../../components/Button"
+import DynamicTitle from "../../components/DynamicTitle"
 
 import { useNavigate } from "react-router-dom"
 
@@ -22,7 +23,7 @@ function MyProjects() {
     return (
         <Container>
 
-           <Title>Área de <span>Projetos</span></Title>
+            <DynamicTitle phrases={['Área de Projetos']} />
             <Button type="button" theme={'primary'} onClick={() => navigate('/')}>Página inicial</Button>
 
             <ProjectsContainer>
