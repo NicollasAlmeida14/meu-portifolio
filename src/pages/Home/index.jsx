@@ -66,7 +66,7 @@ function Home() {
 
       <Header>
         <img src={Logo} style={{ width: "125px", height: "125px" }} />
-        <DynamicTitle phrases={['Bem-vindos ao meu portifólio!', 'Foi feito com muito carinho!', 'Espero que gostem!']} />
+        <DynamicTitle phrases={['Bem-vindos ao meu portifólio!', 'Foi feito com muito carinho!']} />
       </Header>
 
       <Nav>
