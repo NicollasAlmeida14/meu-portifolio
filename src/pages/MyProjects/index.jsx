@@ -5,6 +5,7 @@ import DynamicTitle from "../../components/DynamicTitle"
 
 import { useNavigate } from "react-router-dom"
 
+import DonaGeProject from '../../assets/loja-dona-ge.png'
 import PassWaveProject from "../../assets/projeto-passwave.png"
 import CurrencyConverterProject from "../../assets/projeto-conversor-de-moedas.png"
 import StopwatchProject from "../../assets/projeto-cronometro.png"
@@ -27,6 +28,17 @@ function MyProjects() {
             <Button type="button" theme={'primary'} onClick={() => navigate('/')}>Página inicial</Button>
 
             <ProjectsContainer>
+
+                <ProjectCard onClick={() => anotherTab('https://loja-dona-ge.vercel.app/')}>
+                    <img src={DonaGeProject} />
+
+                    <div>
+                        <SubTitle>Loja Dona Ge</SubTitle>
+                        <p>Projeto em homenagem ao antigo negócio da minha vó, consiste em um site de vendas de produtos artesanais. Feito com totalmente com React, ele apresenta algumas funcionalidades interessantes, como a responsividade e a introdução de um carrinho de compras funcional.</p>
+                    </div>
+
+                    <Button type="button" onClick={() => anotherTab('https://github.com/NicollasAlmeida14/loja-dona-ge')}>Repositório</Button>
+                </ProjectCard>
 
                 <ProjectCard onClick={() => anotherTab('https://nicollasalmeida14.github.io/passwave-gerador-de-senhas/')}>
                     <img src={PassWaveProject} />
