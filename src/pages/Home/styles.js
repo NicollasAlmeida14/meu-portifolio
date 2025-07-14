@@ -20,7 +20,7 @@ export const Container = styled.div`
 
 export const Main = styled.main`
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: 1fr 30%;
     align-items: center;
     margin: 30px 0;
     gap: 1rem;
@@ -39,6 +39,17 @@ export const AboutMeDiv = styled.div`
     align-items: center;
     padding: 1.5rem;
     gap: 1rem;
+
+    p {
+       font-weight: 500;
+       font-size: 17px;
+       text-align: justify;
+    }
+
+    span {
+        font-weight: 700;
+        font-size: 18px;
+    }
 
     @media (max-width: 1025px) { 
     padding: 0.5rem;

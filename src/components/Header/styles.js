@@ -84,10 +84,10 @@ export const SocialMediaButton = styled.button`
     &:hover {
         background: linear-gradient(135deg, #6F00FF, #00F0FF);
         transform: translateY(-5px);
-        transition: all 0.3s ease-in-out;
+        transition: 0.3s ease-in-out;
     }
 
      &:active {
-        opacity: 0.6;
+        transform: translateY(0);
     }
 `
