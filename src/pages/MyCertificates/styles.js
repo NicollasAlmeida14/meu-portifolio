@@ -7,7 +7,7 @@ const boxShadowEffect = keyframes`
 
     50% {
         box-shadow: 4px 5px 4px 2px rgba(0,21,555);
-        transform: translateY(-5px) scale(1.05);
+        transform:  scale(1.05);
     }
 `
 
@@ -28,7 +28,7 @@ export const CertficateSection = styled.section`
     align-items: center;
     gap: 2rem;
     padding: 4rem 1.5rem 5.5rem;
-    margin-bottom: 3.3rem;
+    margin-bottom: 3.2rem;
 
     img {
         width: 100%;
