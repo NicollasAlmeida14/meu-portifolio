@@ -28,7 +28,7 @@ export const CertficateSection = styled.section`
     align-items: center;
     gap: 2rem;
     padding: 4rem 1.5rem 5.5rem;
-    margin-bottom: 3.2rem;
+    margin-bottom: 3.3rem;
 
     img {
         width: 100%;
