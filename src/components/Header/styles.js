@@ -24,6 +24,7 @@ export const Header = styled.header`
 export const Links = styled.p`
     cursor: pointer;
     position: relative;
+    color: #ffffff;
 
 &::after {
     content: '';
