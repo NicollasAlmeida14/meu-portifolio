@@ -18,7 +18,6 @@ import {
 } from "./styles";
 
 function MyCertificates() {
-
     const { ref: refFirst, inView: inViewFirst } = useInView({
         triggerOnce: true,
         threshold: 0.2

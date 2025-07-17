@@ -14,13 +14,15 @@ export const Container = styled.div`
     background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
     color: #fff;
     min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
     display: flex;
     flex-direction: column;
 `
 
 export const Main = styled.main`
     display: grid;
-    grid-template-columns: 1fr 30%;
+    grid-template-columns: 1fr 35%;
     align-items: center;
     margin: 30px 0;
     gap: 1rem;

@@ -3,6 +3,8 @@ import MyFoto from "../../assets/nicollas.png"
 import Button from "../../components/Button"
 import DefaultHeader from "../../components/Header"
 
+import { motion } from "framer-motion"
+
 import {
   AboutMeDiv,
   Container,
@@ -12,7 +14,6 @@ import {
 } from "./styles"
 
 function Home() {
-
   const handleDownload = () => {
     const link = document.createElement('a')
     link.href = 'curriculo.pdf'
@@ -27,7 +28,12 @@ function Home() {
       <DefaultHeader />
 
       <Main>
-        <AboutMeDiv>
+        <AboutMeDiv
+          as={motion.div}
+          initial={{ opacity: 0, translateX: -30 }}
+          animate={{ opacity: 1, translateX: 0 }}
+          transition={{ ease: 'easeIn', duration: 1 }}
+        >
           <SubTitle>Um pouco sobre mim!</SubTitle>
 
           <p>
@@ -43,7 +49,12 @@ function Home() {
           <Button type="button" theme={'primary'} onClick={handleDownload}>Baixar CV</Button>
         </AboutMeDiv>
 
-        <InfoDiv>
+        <InfoDiv
+          as={motion.div}
+          initial={{ opacity: 0, translateX: 30 }}
+          animate={{ opacity: 1, translateX: 0 }}
+          transition={{ ease: 'easeIn', duration: 1 }}
+        >
           <SubTitle>Nicollas Almeida Lopes</SubTitle>
           <h3>Desenvolvedor Front-End</h3>
           <img src={MyFoto} />

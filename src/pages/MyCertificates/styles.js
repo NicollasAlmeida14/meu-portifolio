@@ -2,12 +2,12 @@ import styled, { keyframes } from "styled-components";
 
 const boxShadowEffect = keyframes`
     0%, 100% {
-        box-shadow: none;
+        box-shadow: 4px 5px 4px 2px rgba(0,21,555);
     }
 
     50% {
-        box-shadow: 4px 5px 4px 2px rgba(0,21,555);
-        transform:  scale(1.05);
+        box-shadow: none;
+        transform:  scale(0.9);
     }
 `
 
@@ -20,15 +20,15 @@ export const Container = styled.div`
 `
 
 export const CertificatesContainer = styled.div`
-    padding-top: 6.5rem;
+    padding-top: 6.8rem;
 `
 export const CertficateSection = styled.section`
     display: grid;
     grid-template-columns: 1fr 30%;
     align-items: center;
     gap: 2rem;
-    padding: 4rem 1.5rem 5.5rem;
-    margin-bottom: 3.2rem;
+    padding: 4.5rem 1.5rem 5.5rem;
+    margin-bottom: 3.5rem;
 
     img {
         width: 100%;
@@ -44,7 +44,6 @@ export const CertificateDescriptionContainer = styled.div`
 `
 
 export const CertificateDescription = styled.p`
-    text-align: center;
     font-size: 1.2rem;
     font-weight: 700;
 `

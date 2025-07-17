@@ -9,6 +9,7 @@ export const Header = styled.header`
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    z-index: 1000;
 
     img {
         width: 80px;
