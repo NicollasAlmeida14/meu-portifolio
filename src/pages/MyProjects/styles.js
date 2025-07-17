@@ -18,7 +18,7 @@ export const ProjectSection = styled.section`
     grid-template-columns: 1fr 40%;
     align-items: center;
     gap: 2rem;
-    padding: 2rem 2rem 3rem;
+    padding: 1.5rem 2rem 3rem;
     margin-bottom: 2rem;
 `
 

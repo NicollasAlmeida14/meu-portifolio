@@ -1,3 +1,5 @@
+import DonaGeProject from "../../assets/projeto-loja-dona-ge.png"
+import UserRegisterProject from "../../assets/projeto-cadastro-de-usuarios.png"
 import PassWaveProject from "../../assets/projeto-passwave.png"
 import CurrencyConverterProject from "../../assets/projeto-conversor-de-moedas.png"
 import JokenpoProject from "../../assets/projeto-jokenpo.png"
@@ -24,8 +26,20 @@ import {
     FaCoins,
     FaRobot,
     FaRegLightbulb,
-    FaExchangeAlt
+    FaExchangeAlt,
+    FaDatabase,
+    FaShoppingCart
 } from "react-icons/fa";
+
+import {
+    SiPrisma,
+    SiVite
+} from "react-icons/si";
+
+import {
+    MdOutlineFindInPage,
+    MdOutlineViewCarousel
+} from "react-icons/md";
 
 import { DiMongodb } from "react-icons/di";
 import { LuExternalLink } from "react-icons/lu";
@@ -58,6 +72,16 @@ function MyProjects() {
     const anotherTab = (url) => {
         window.open(url, '_blank')
     }
+
+    const { ref: refDonaGe, inView: inViewDonaGe } = useInView({
+        triggerOnce: true,
+        threshold: 0.2
+    })
+
+    const { ref: refUserRegister, inView: inViewUserRegister } = useInView({
+        triggerOnce: true,
+        threshold: 0.2
+    })
 
     const { ref: refPassWave, inView: inViewPassWave } = useInView({
         triggerOnce: true,
@@ -99,6 +123,153 @@ function MyProjects() {
             <DefaultHeader />
 
             <ProjectsContainer>
+
+                <ProjectSection
+                    as={motion.div}
+                    ref={refDonaGe}
+                    initial={{ opacity: 0, x: -50 }}
+                    animate={inViewDonaGe ? { opacity: 1, x: 0 } : {}}
+                    transition={{ ease: 'easeIn', duration: 0.8 }}
+                >
+                    <ProjectDescriptionContainer>
+                        <ProjectName>Loja Dona Ge</ProjectName>
+
+                        <ProjectDescription>
+                            Este projeto foi inspirado no antigo negócio da minha avó de vendas de produtos artesanais. Feito com muito carinho, este projeto me permitiu desafiar-me aprendendo conceitos que nunca tinha tentado antes, como o uso useContext, necessário para criar um carrinho de compras funcional e o famoso menu sandwich, para melhoror responsividade.
+                        </ProjectDescription>
+
+                        <ProjectFunctionalityContainer>
+                            <FunctionalityTitle>Principais funcionalidades:</FunctionalityTitle>
+
+                            <Ul>
+                                <Li>
+                                    <FaMobileAlt />
+                                    Responsividade
+                                </Li>
+
+                                <Li>
+                                    <FaShoppingCart />
+                                    Carrinho de compras funcional
+                                </Li>
+
+                                <Li>
+                                    <MdOutlineViewCarousel />
+                                    Carrossel de produtos com Swiper
+                                </Li>
+
+                                <Li>
+                                    <MdOutlineFindInPage />
+                                    Página de variações de produtos
+                                </Li>
+                            </Ul>
+                        </ProjectFunctionalityContainer>
+
+                        <LinksContainer>
+                            <button
+                                onClick={() => anotherTab('https://loja-dona-ge.vercel.app/')}
+                            >
+                                <LuExternalLink />
+                                Projeto
+                            </button>
+
+                            <button
+                                onClick={() => anotherTab('https://github.com/NicollasAlmeida14/loja-dona-ge')}
+                            >
+                                <LuExternalLink />
+                                Repositório
+                            </button>
+                        </LinksContainer>
+                    </ProjectDescriptionContainer>
+
+                    <ProjectShowcaseContainer>
+                        <img src={DonaGeProject} />
+
+                        <ToolsInfoContainer>
+                            <ToolsTitle>Ferramentas utilizadas</ToolsTitle>
+
+                            <div>
+                                <p> <IoLogoReact /> </p>
+                                <p> <SiVite /> </p>
+                            </div>
+                        </ToolsInfoContainer>
+                    </ProjectShowcaseContainer>
+                </ProjectSection>
+
+                <ProjectSection
+                    as={motion.div}
+                    ref={refUserRegister}
+                    initial={{ opacity: 0, x: 50 }}
+                    animate={inViewUserRegister ? { opacity: 1, x: 0 } : {}}
+                    transition={{ ease: 'easeIn', duration: 0.8 }}
+                >
+                    <ProjectDescriptionContainer>
+                        <ProjectName>Cadastro de Usuários</ProjectName>
+
+                        <ProjectDescription>
+                            Projeto feito na formação do DevClub, este projeto se trata da criação de um cadastro de usuário, desde o Front até o Back. Este projeto foi realizado com o intuito de aprender conceitos do NodeJs, para o Back, e do ReactJs, para o Front.
+                        </ProjectDescription>
+
+                        <ProjectFunctionalityContainer>
+                            <FunctionalityTitle>Principais funcionalidades:</FunctionalityTitle>
+
+                            <Ul>
+                                <Li>
+                                    <FaDatabase />
+                                    Realacionamento com banco de dados
+                                </Li>
+
+                                <Li>
+                                    <GoGear />
+                                    Uso do CRUD para gerenciamento de dados
+                                </Li>
+
+                                <Li>
+                                    <GoGear />
+                                    Consumo de uma API de avatares
+                                </Li>
+                            </Ul>
+                        </ProjectFunctionalityContainer>
+
+                        <LinksContainer>
+                            <button
+                                onClick={() => anotherTab('https://cadastro-de-usuarios-front.vercel.app/')}
+                            >
+                                <LuExternalLink />
+                                Projeto
+                            </button>
+
+                            <button
+                                onClick={() => anotherTab('https://github.com/NicollasAlmeida14/cadastro-de-usuarios-front')}
+                            >
+                                <LuExternalLink />
+                                Repositório Front-End
+                            </button>
+
+                            <button
+                                onClick={() => anotherTab('https://github.com/NicollasAlmeida14/cadastro-de-usuarios-back')}
+                            >
+                                <LuExternalLink />
+                                Repositório Back-End
+                            </button>
+                        </LinksContainer>
+                    </ProjectDescriptionContainer>
+
+                    <ProjectShowcaseContainer>
+                        <img src={UserRegisterProject} />
+
+                        <ToolsInfoContainer>
+                            <ToolsTitle>Ferramentas utilizadas</ToolsTitle>
+
+                            <div>
+                                <p> <IoLogoReact /> </p>
+                                <p> <SiVite /> </p>
+                                <p> <IoLogoNodejs /> </p>
+                                <p> <SiPrisma /> </p>
+                                <p> <DiMongodb /> </p>
+                            </div>
+                        </ToolsInfoContainer>
+                    </ProjectShowcaseContainer>
+                </ProjectSection>
 
                 <ProjectSection
                     as={motion.div}
