@@ -1,45 +1,128 @@
-import { CerticateCard, CertificatesContainer, Container, SubTitle } from "./styles";
-
-import Button from "../../components/Button";
-import DynamicTitle from "../../components/DynamicTitle";
-
 import FirstCerticate from "../../assets/certificado-html-css.png"
 import SecondCertificate from "../../assets/certificado-js-intermediario.png"
 import ThirdCerticate from "../../assets/certificado-nodejs.png"
 import FourthCerticate from "../../assets/certificado-react.png"
 
-import { useNavigate } from "react-router-dom";
+import DefaultHeader from "../../components/Header";
+
+import { motion } from 'framer-motion'
+import { useInView } from 'react-intersection-observer'
+
+import {
+    CertficateSection,
+    CertificateDescription,
+    CertificateDescriptionContainer,
+    CertificatesContainer,
+    Container,
+    RealizatedProjects,
+} from "./styles";
 
 function MyCertificates() {
-    const navigate = useNavigate()
+    const { ref: refFirst, inView: inViewFirst } = useInView({
+        triggerOnce: true,
+        threshold: 0.2
+    })
+
+    const { ref: refSecond, inView: inViewSecond } = useInView({
+        triggerOnce: true,
+        threshold: 0.2
+    })
+
+    const { ref: refThird, inView: inViewThird } = useInView({
+        triggerOnce: true,
+        threshold: 0.2
+    })
+
+    const { ref: refFourth, inView: inViewFourth } = useInView({
+        triggerOnce: true,
+        threshold: 0.2
+    })
 
     return (
         <Container>
-
-            <DynamicTitle phrases={['Área de Certificados']} />
-            <Button theme={'primary'} type="buttton" onClick={() => navigate('/')}>Página Incial</Button>
+            <DefaultHeader />
 
             <CertificatesContainer>
 
-                <CerticateCard>
+                <CertficateSection
+                    as={motion.div}
+                    ref={refFirst}
+                    initial={{ opacity: 0, x: -50 }}
+                    animate={inViewFirst ? { opacity: 1, x: 0 } : {}}
+                    transition={{ ease: 'easeIn', duration: 0.8 }}
+                >
+                    <CertificateDescriptionContainer>
+                        <CertificateDescription>
+                            Certicado correspondente ao módulo de HTML, CSS, Git e GitHub na formação Full-Stack do DevClub. Neste módulo, aprendi os fundamentos de desenvolvimento web, incluindo a estruturação de páginas com HTML, estilização com CSS e controle de versão com Git e GitHub.
+                        </CertificateDescription>
+
+                        <RealizatedProjects>
+                            Neste módulo foram realizados alguns projetos práticos, como a criação de uma página web estática e o uso do Git para versionamento de código.
+                        </RealizatedProjects>
+                    </CertificateDescriptionContainer>
+
                     <img src={FirstCerticate} />
-                    <SubTitle>DevClub</SubTitle>
-                </CerticateCard>
+                </CertficateSection>
 
-                <CerticateCard>
+                <CertficateSection
+                    as={motion.div}
+                    ref={refSecond}
+                    initial={{ opacity: 0, x: -50 }}
+                    animate={inViewSecond ? { opacity: 1, x: 0 } : {}}
+                    transition={{ ease: 'easeIn', duration: 0.8 }}
+                >
+                    <CertificateDescriptionContainer>
+                        <CertificateDescription>
+                            Certificado correspondente ao módulo de JavaScript Intermediário na formação Full-Stack do DevClub. Neste módulo, aprofundei meus conhecimentos em JavaScript, aprendendo sobre manipulação de DOM, eventos, e conceitos da linguagem.
+                        </CertificateDescription>
+
+                        <RealizatedProjects>
+                            Durante este módulo, foram realizados projetos práticos que incluíram a criação de interações dinâmicas em páginas web e a implementação de funcionalidades utilizando JavaScript.
+                        </RealizatedProjects>
+                    </CertificateDescriptionContainer>
+
                     <img src={SecondCertificate} />
-                    <SubTitle>DevClub</SubTitle>
-                </CerticateCard>
+                </CertficateSection>
 
-                <CerticateCard>
+                <CertficateSection
+                    as={motion.div}
+                    ref={refThird}
+                    initial={{ opacity: 0, x: -50 }}
+                    animate={inViewThird ? { opacity: 1, x: 0 } : {}}
+                    transition={{ ease: 'easeIn', duration: 0.8 }}
+                >
+                    <CertificateDescriptionContainer>
+                        <CertificateDescription>
+                            Certificado correspondente ao módulo de Node.js e JavaScript avançado na formação Full-Stack do DevClub. Neste módulo, aprendi a construir uma aplicação backend utilizando Node.js, incluindo a criação de APIs e o gerenciamento de banco de dados.
+                        </CertificateDescription>
+
+                        <RealizatedProjects>
+                            O projeto realizado durante este módulo consiste na criação de uma API de cadastro de usuários. Usando o famoso CRUD e integrando ao MongoDB. Neste projeto foi utilizado também a biblioteca do Prisma, facilitando a integração da API com o banco de dados.
+                        </RealizatedProjects>
+                    </CertificateDescriptionContainer>
+
                     <img src={ThirdCerticate} />
-                    <SubTitle>DevClub</SubTitle>
-                </CerticateCard>
+                </CertficateSection>
 
-                <CerticateCard>
+                <CertficateSection
+                    as={motion.div}
+                    ref={refFourth}
+                    initial={{ opacity: 0, x: -50 }}
+                    animate={inViewFourth ? { opacity: 1, x: 0 } : {}}
+                    transition={{ ease: 'easeIn', duration: 0.8 }}
+                >
+                    <CertificateDescriptionContainer>
+                        <CertificateDescription>
+                            Certificado correspondente ao módulo de React e CSS avançado da formação Full-Stack do DevClub. Neste módulo aprendi o uso do display flex e display grid, além de conceitos fundamentais do React.
+                        </CertificateDescription>
+
+                        <RealizatedProjects>
+                            O projeto realizado durante o módulo se trata do Front-End do cadastro de usuário, cujo a API foi feito durante o módulo de Node.js e JavaScript avançado.
+                        </RealizatedProjects>
+                    </CertificateDescriptionContainer>
+
                     <img src={FourthCerticate} />
-                    <SubTitle>DevClub</SubTitle>
-                </CerticateCard>
+                </CertficateSection>
 
             </CertificatesContainer>
         </Container>

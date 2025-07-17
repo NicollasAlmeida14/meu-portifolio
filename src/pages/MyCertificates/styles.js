@@ -1,57 +1,55 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
-export const Container = styled.div`
-        background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
-        color: #fff;
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
-`
-
-export const CertificatesContainer = styled.div`
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem 4rem;
-    max-width: 1200px;
-    margin-top: 30px;
-
-    @media (max-width: 1025px) {
-        grid-template-columns: 1fr;
-    }
-`
-
-export const CerticateCard = styled.div`
-    background-color: #292933;
-    border-radius: 10px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: all 0.5s ease;
-
-    &:hover {
-        transform: translateY(-10px) scale(1.05);
+const boxShadowEffect = keyframes`
+    0%, 100% {
         box-shadow: 4px 5px 4px 2px rgba(0,21,555);
     }
 
-    img {
-    width:100%;
-    object-fit: cover;
+    50% {
+        box-shadow: none;
+        transform:  scale(0.9);
     }
-
-    @media (max-width: 1025px) { 
-           &:hover {
-                transform: none;
-                box-shadow: none;
-            }
-        }
-
 `
 
-export const SubTitle = styled.h2`
-    font-size: 2rem;
-    padding: 1rem;
+export const Container = styled.div`
+    background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+`
+
+export const CertificatesContainer = styled.div`
+    padding-top: 6.8rem;
+`
+export const CertficateSection = styled.section`
+    display: grid;
+    grid-template-columns: 1fr 30%;
+    align-items: center;
+    gap: 2rem;
+    padding: 4.5rem 1.5rem 5.5rem;
+    margin-bottom: 3.5rem;
+
+    img {
+        width: 100%;
+        border-radius: 10px;
+        animation: ${boxShadowEffect} 3s infinite ease;
+    }
+`
+
+export const CertificateDescriptionContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+`
+
+export const CertificateDescription = styled.p`
+    font-size: 1.2rem;
+    font-weight: 700;
+`
+
+export const RealizatedProjects = styled.p`
     text-align: center;
+    font-size: 1.1rem;
+    font-weight: 500;
 `
