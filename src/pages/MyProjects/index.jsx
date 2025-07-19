@@ -1,3 +1,4 @@
+import AnimationCreatorProject from "../../assets/projeto-criador-de-animacoes.png"
 import DonaGeProject from "../../assets/projeto-loja-dona-ge.png"
 import UserRegisterProject from "../../assets/projeto-cadastro-de-usuarios.png"
 import PassWaveProject from "../../assets/projeto-passwave.png"
@@ -16,7 +17,8 @@ import {
     IoLogoJavascript,
     IoLogoNodejs,
     IoLogoReact,
-    IoMailUnreadOutline
+    IoMailUnreadOutline,
+    IoCodeSlash
 } from "react-icons/io5"
 
 import {
@@ -33,12 +35,14 @@ import {
 
 import {
     SiPrisma,
-    SiVite
+    SiVite,
+    SiN8N
 } from "react-icons/si";
 
 import {
     MdOutlineFindInPage,
-    MdOutlineViewCarousel
+    MdOutlineViewCarousel,
+    MdAnimation
 } from "react-icons/md";
 
 import { DiMongodb } from "react-icons/di";
@@ -72,6 +76,11 @@ function MyProjects() {
     const anotherTab = (url) => {
         window.open(url, '_blank')
     }
+
+    const { ref: refAnimationCreator, inView: inViewAnimationCreator } = useInView({
+        triggerOnce: true,
+        threshold: 0.2
+    })
 
     const { ref: refDonaGe, inView: inViewDonaGe } = useInView({
         triggerOnce: true,
@@ -123,6 +132,74 @@ function MyProjects() {
             <DefaultHeader />
 
             <ProjectsContainer>
+
+                <ProjectSection
+                    as={motion.div}
+                    ref={refAnimationCreator}
+                    initial={{ opacity: 0, x: 50 }}
+                    animate={inViewAnimationCreator ? { opacity: 1, x: 0 } : {}}
+                    transition={{ ease: 'easeIn', duration: 0.8 }}
+                >
+                    <ProjectDescriptionContainer>
+                        <ProjectName>Criador mágico de animações</ProjectName>
+
+                        <ProjectDescription>
+                            Este projeto foi desenvolvido em um evento realizado no YouTube do DevClub, chamado 'Progamador do futuro'. Este projeto agregou um conhecimento valioso para mim: A possibilidade de integrar automações com a programação.
+                            <br />
+                            (Devido a limitações do plano gratuito do N8N, no momento, o deploy do projeto está indisponível, podendo ser disponibilizado em breve!)
+                        </ProjectDescription>
+
+                        <ProjectFunctionalityContainer>
+                            <FunctionalityTitle>Principais funcionalidades:</FunctionalityTitle>
+
+                            <Ul>
+                                <Li>
+                                    <FaMobileAlt />
+                                    Responsividade
+                                </Li>
+
+                                <Li>
+                                    <SiN8N />
+                                    Integração com N8N para automação
+                                </Li>
+
+                                <Li>
+                                    <IoCodeSlash />
+                                    Disponibiliza o código da animação criada
+                                </Li>
+
+                                <Li>
+                                    <MdAnimation />
+                                    Mostra o resultado da animação criada
+                                </Li>
+                            </Ul>
+                        </ProjectFunctionalityContainer>
+
+                        <LinksContainer>
+                            <button
+                                onClick={() => anotherTab('https://github.com/NicollasAlmeida14/criador-de-animacoes')}
+                            >
+                                <LuExternalLink />
+                                Repositório
+                            </button>
+                        </LinksContainer>
+                    </ProjectDescriptionContainer>
+
+                    <ProjectShowcaseContainer>
+                        <img src={AnimationCreatorProject} />
+
+                        <ToolsInfoContainer>
+                            <ToolsTitle>Principais ferramentas utilizadas</ToolsTitle>
+
+                            <div>
+                                <p> <IoLogoHtml5 /> </p>
+                                <p> <IoLogoCss3 /> </p>
+                                <p> <IoLogoJavascript /> </p>
+                                <p> <SiN8N /> </p>
+                            </div>
+                        </ToolsInfoContainer>
+                    </ProjectShowcaseContainer>
+                </ProjectSection>
 
                 <ProjectSection
                     as={motion.div}
@@ -185,7 +262,7 @@ function MyProjects() {
                         <img src={DonaGeProject} />
 
                         <ToolsInfoContainer>
-                            <ToolsTitle>Ferramentas utilizadas</ToolsTitle>
+                            <ToolsTitle>Principais ferramentas utilizadas</ToolsTitle>
 
                             <div>
                                 <p> <IoLogoReact /> </p>
@@ -258,7 +335,7 @@ function MyProjects() {
                         <img src={UserRegisterProject} />
 
                         <ToolsInfoContainer>
-                            <ToolsTitle>Ferramentas utilizadas</ToolsTitle>
+                            <ToolsTitle>Principais ferramentas utilizadas</ToolsTitle>
 
                             <div>
                                 <p> <IoLogoReact /> </p>
@@ -332,7 +409,7 @@ function MyProjects() {
                         <img src={PassWaveProject} />
 
                         <ToolsInfoContainer>
-                            <ToolsTitle>Ferramentas utilizadas</ToolsTitle>
+                            <ToolsTitle>Principais ferramentas utilizadas</ToolsTitle>
 
                             <div>
                                 <p> <IoLogoHtml5 /> </p>
@@ -399,7 +476,7 @@ function MyProjects() {
                         <img src={CurrencyConverterProject} />
 
                         <ToolsInfoContainer>
-                            <ToolsTitle>Ferramentas utilizadas</ToolsTitle>
+                            <ToolsTitle>Principais ferramentas utilizadas</ToolsTitle>
 
                             <div>
                                 <p> <IoLogoHtml5 /> </p>
@@ -466,7 +543,7 @@ function MyProjects() {
                         <img src={JokenpoProject} />
 
                         <ToolsInfoContainer>
-                            <ToolsTitle>Ferramentas utilizadas</ToolsTitle>
+                            <ToolsTitle>Principais ferramentas utilizadas</ToolsTitle>
 
                             <div>
                                 <p> <IoLogoHtml5 /> </p>
@@ -533,7 +610,7 @@ function MyProjects() {
                         <img src={SuperMarioProject} />
 
                         <ToolsInfoContainer>
-                            <ToolsTitle>Ferramentas utilizadas</ToolsTitle>
+                            <ToolsTitle>Principais ferramentas utilizadas</ToolsTitle>
 
                             <div>
                                 <p> <IoLogoHtml5 /> </p>
@@ -590,7 +667,7 @@ function MyProjects() {
                         <img src={TeslaProject} />
 
                         <ToolsInfoContainer>
-                            <ToolsTitle>Ferramentas utilizadas</ToolsTitle>
+                            <ToolsTitle>Principais ferramentas utilizadas</ToolsTitle>
 
                             <div>
                                 <p> <IoLogoHtml5 /> </p>
@@ -657,7 +734,7 @@ function MyProjects() {
                         <img src={DevSorteioProject} />
 
                         <ToolsInfoContainer>
-                            <ToolsTitle>Ferramentas utilizadas</ToolsTitle>
+                            <ToolsTitle>Principais ferramentas utilizadas</ToolsTitle>
 
                             <div>
                                 <p> <IoLogoHtml5 /> </p>
@@ -719,7 +796,7 @@ function MyProjects() {
                         <img src={StopwatchProject} />
 
                         <ToolsInfoContainer>
-                            <ToolsTitle>Ferramentas utilizadas</ToolsTitle>
+                            <ToolsTitle>Principais ferramentas utilizadas</ToolsTitle>
 
                             <div>
                                 <p> <IoLogoHtml5 /> </p>
