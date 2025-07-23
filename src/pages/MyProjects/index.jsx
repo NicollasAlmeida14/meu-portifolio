@@ -212,7 +212,7 @@ function MyProjects() {
                         <ProjectName>Loja Dona Ge</ProjectName>
 
                         <ProjectDescription>
-                            Este projeto foi inspirado no antigo negócio da minha avó de vendas de produtos artesanais. Feito com muito carinho, este projeto me permitiu desafiar-me aprendendo conceitos que nunca tinha tentado antes, como o uso useContext, necessário para criar um carrinho de compras funcional e o famoso menu sandwich, para melhoror responsividade.
+                            Este projeto foi inspirado no antigo negócio da minha avó de vendas de produtos artesanais. Feito com muito carinho, este projeto me permitiu desafiar-me aprendendo conceitos que nunca tinha tentado antes, como o uso useContext, necessário para criar um carrinho de compras funcional.
                         </ProjectDescription>
 
                         <ProjectFunctionalityContainer>
@@ -623,63 +623,6 @@ function MyProjects() {
 
                 <ProjectSection
                     as={motion.div}
-                    ref={refTesla}
-                    initial={{ opacity: 0, x: -50 }}
-                    animate={inViewTesla ? { opacity: 1, x: 0 } : {}}
-                    transition={{ ease: 'easeIn', duration: 0.8 }}
-                >
-                    <ProjectDescriptionContainer>
-                        <ProjectName>Site Tesla</ProjectName>
-
-                        <ProjectDescription>
-                            Projeto realizado em um evento no YouTube do DevClub. Este projeto foi o resposável por me introduzir à área da programação.
-                        </ProjectDescription>
-
-                        <ProjectFunctionalityContainer>
-                            <FunctionalityTitle>Principais funcionalidades:</FunctionalityTitle>
-
-                            <Ul>
-                                <Li>
-                                    <FaRegLightbulb />
-                                    Lógica para fazer aparecer e desaparecer o formulário de mensagem
-                                </Li>
-                            </Ul>
-                        </ProjectFunctionalityContainer>
-
-                        <LinksContainer>
-                            <button
-                                onClick={() => anotherTab('https://nicollasalmeida14.github.io/tesla/')}
-                            >
-                                <LuExternalLink />
-                                Projeto
-                            </button>
-
-                            <button
-                                onClick={() => anotherTab('https://github.com/NicollasAlmeida14/tesla')}
-                            >
-                                <LuExternalLink />
-                                Repositório
-                            </button>
-                        </LinksContainer>
-                    </ProjectDescriptionContainer>
-
-                    <ProjectShowcaseContainer>
-                        <img src={TeslaProject} />
-
-                        <ToolsInfoContainer>
-                            <ToolsTitle>Principais ferramentas utilizadas</ToolsTitle>
-
-                            <div>
-                                <p> <IoLogoHtml5 /> </p>
-                                <p> <IoLogoCss3 /> </p>
-                                <p> <IoLogoJavascript /> </p>
-                            </div>
-                        </ToolsInfoContainer>
-                    </ProjectShowcaseContainer>
-                </ProjectSection>
-
-                <ProjectSection
-                    as={motion.div}
                     ref={refDevSorteio}
                     initial={{ opacity: 0, x: 50 }}
                     animate={inViewDevSorteio ? { opacity: 1, x: 0 } : {}}
@@ -794,6 +737,68 @@ function MyProjects() {
 
                     <ProjectShowcaseContainer>
                         <img src={StopwatchProject} />
+
+                        <ToolsInfoContainer>
+                            <ToolsTitle>Principais ferramentas utilizadas</ToolsTitle>
+
+                            <div>
+                                <p> <IoLogoHtml5 /> </p>
+                                <p> <IoLogoCss3 /> </p>
+                                <p> <IoLogoJavascript /> </p>
+                            </div>
+                        </ToolsInfoContainer>
+                    </ProjectShowcaseContainer>
+                </ProjectSection>
+
+                <ProjectSection
+                    as={motion.div}
+                    ref={refTesla}
+                    initial={{ opacity: 0, x: -50 }}
+                    animate={inViewTesla ? { opacity: 1, x: 0 } : {}}
+                    transition={{ ease: 'easeIn', duration: 0.8 }}
+                >
+                    <ProjectDescriptionContainer>
+                        <ProjectName>Site Tesla</ProjectName>
+
+                        <ProjectDescription>
+                            Projeto realizado em um evento no YouTube do DevClub, este projeto foi inspirado no site oficial da Tesla e o resposável por me introduzir à área da programação. Apesar de ter poucas linhas de JavaScript, este projeto foi importante para entender sobre a linguagem.
+                        </ProjectDescription>
+
+                        <ProjectFunctionalityContainer>
+                            <FunctionalityTitle>Principais funcionalidades:</FunctionalityTitle>
+
+                            <Ul>
+                                <Li>
+                                    <FaRegLightbulb />
+                                    Lógica para fazer aparecer e desaparecer o formulário de mensagem
+                                </Li>
+
+                                <Li>
+                                    <IoMailUnreadOutline />
+                                    Recebimento de email usando o Jotform
+                                </Li>
+                            </Ul>
+                        </ProjectFunctionalityContainer>
+
+                        <LinksContainer>
+                            <button
+                                onClick={() => anotherTab('https://nicollasalmeida14.github.io/tesla/')}
+                            >
+                                <LuExternalLink />
+                                Projeto
+                            </button>
+
+                            <button
+                                onClick={() => anotherTab('https://github.com/NicollasAlmeida14/tesla')}
+                            >
+                                <LuExternalLink />
+                                Repositório
+                            </button>
+                        </LinksContainer>
+                    </ProjectDescriptionContainer>
+
+                    <ProjectShowcaseContainer>
+                        <img src={TeslaProject} />
 
                         <ToolsInfoContainer>
                             <ToolsTitle>Principais ferramentas utilizadas</ToolsTitle>

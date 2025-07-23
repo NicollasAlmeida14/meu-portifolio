@@ -31,6 +31,7 @@ export const ProjectDescriptionContainer = styled.div`
     gap: 1.5rem;
     border: solid 3px #0000CD;
     color: #000080;
+    height: 100%;
 `
 
 export const ProjectName = styled.h1`
