@@ -24,16 +24,16 @@ function Home() {
   }
 
   return (
-    <Container>
+    <Container
+      as={motion.div}
+      initial={{ opacity: 0.8, scale: 0.9 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ ease: 'easeIn', duration: 0.8 }}
+    >
       <DefaultHeader />
 
       <Main>
-        <AboutMeDiv
-          as={motion.div}
-          initial={{ opacity: 0, translateX: -30 }}
-          animate={{ opacity: 1, translateX: 0 }}
-          transition={{ ease: 'easeIn', duration: 1 }}
-        >
+        <AboutMeDiv>
           <SubTitle>Um pouco sobre mim!</SubTitle>
 
           <p>
@@ -49,12 +49,7 @@ function Home() {
           <Button type="button" theme={'primary'} onClick={handleDownload}>Baixar CV</Button>
         </AboutMeDiv>
 
-        <InfoDiv
-          as={motion.div}
-          initial={{ opacity: 0, translateX: 30 }}
-          animate={{ opacity: 1, translateX: 0 }}
-          transition={{ ease: 'easeIn', duration: 1 }}
-        >
+        <InfoDiv>
           <SubTitle>Nicollas Almeida Lopes</SubTitle>
           <h3>Desenvolvedor Front-End</h3>
           <img src={MyFoto} />

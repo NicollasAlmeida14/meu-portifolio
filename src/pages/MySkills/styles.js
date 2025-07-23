@@ -2,120 +2,48 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
-    color: #fff;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 20px;
 `
 
-export const SubTitle = styled.h2`
-    font-size: 2rem;
+export const SkillsContainer = styled.main`
+    padding-top: 6.5rem;
+`
+
+export const SkillsSection = styled.section`
+    margin: 1rem 0 7.5rem;
+    background-color: #364F6B;
+    padding: 1rem;
+    color: #ffffff;
+`
+
+export const Title = styled.h1`
+    font-size: 2.1rem;
     text-align: center;
-    margin: 10px 0 ;
 `
 
-export const SkillsContainer = styled.div`
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-
-    @media (max-width: 1280px) { 
-        grid-template-columns: 1fr;
-    }
-`
-
-export const FrontEndContainer = styled.div`
-    background-color: #292933;
-    margin-top: 30px;
-    border: solid ;
-    border-radius: 10px;
+export const ToolContainer = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0.5rem;
 
     div {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    padding: 10px;
-    }
-
-    img {
-        width: 200px;
-        transition: all 0.5s ease;
-
-        &:hover {
-            transform: translateY(-10px) scale(1.05);
-        }
-    }
-
-    @media (max-width: 1280px) {
-        img{
-            &:hover {
-                transform: none;
-                scale: 1;
-            }
-        }
-    }
-
-    @media (max-width: 650px) {
-        div {
-            grid-template-columns: repeat(2,1fr);
-        }
-
-        img {
-            width: 150px; 
-            transition: none;
-
-            &:hover {
-            transform: none;
-            scale: 1;
-            }
-        }
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
+        padding: 1rem;
+        width: 50%;
     }
 `
 
-export const BackEndContainer = styled.div`
-    background-color: #292933;
-    margin-top: 30px;
-    border: solid ;
-    border-radius: 10px;
+export const ToolName = styled.h2`
+    font-size: 1.8rem;
+`
 
-    div {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    padding: 10px;
-    }
-
-    img {
-        width: 200px;
-        transition: all 0.5s ease;
-
-        &:hover {
-            transform: translateY(-10px) scale(1.05);
-        }
-    }
-
-    @media (max-width: 1280px) {
-        img{
-            &:hover {
-                transform: none;
-                scale: 1;
-            }
-        }
-    }
-    
-    @media (max-width: 650px) { 
-        div {
-            grid-template-columns: repeat(2,1fr);
-        }
-
-        img {
-            width: 150px; 
-            transition: none;
-
-            &:hover {
-            transform: none;
-            scale: 1;
-            }
-        }
-    }
+export const ToolDescription = styled.p`
+    font-weight: 500;
+    font-size: 1.2rem;
 `

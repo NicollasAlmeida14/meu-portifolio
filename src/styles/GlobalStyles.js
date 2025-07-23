@@ -7,4 +7,16 @@ export const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
     }
+
+    .swiper-button-next,.swiper-button-prev {
+       
+        &:hover {
+            scale: 1.2;
+            transition: all 0.3s ease-in-out;
+        }
+
+         &:active {
+            scale: 1;
+        }
+    }
 `
