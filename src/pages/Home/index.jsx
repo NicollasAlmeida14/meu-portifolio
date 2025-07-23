@@ -14,15 +14,6 @@ import {
 } from "./styles"
 
 function Home() {
-  // const handleDownload = () => {
-  //   const link = document.createElement('a')
-  //   link.href = 'curriculo.pdf'
-  //   link.download = 'Nicollas_Almeida_Lopes Desenvolvedor_Front-End.pdf'
-  //   document.body.appendChild(link)
-  //   link.click()
-  //   document.body.removeChild(link)
-  // }
-
   return (
     <Container
       as={motion.div}
@@ -48,8 +39,6 @@ function Home() {
             src="https://github-readme-stats.vercel.app/api/top-langs/?username=nicollasalmeida14&layout=compact&theme=algolia  "
             alt="Linguagens mais utilizadas"
           />
-
-          {/* <Button type="button" theme={'primary'} onClick={handleDownload}>Baixar CV</Button> */}
         </AboutMeDiv>
 
         <InfoDiv>

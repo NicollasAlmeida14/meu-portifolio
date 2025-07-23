@@ -1,10 +1,17 @@
 import { useNavigate } from "react-router-dom"
 
-import { IoLogoWhatsapp, IoLogoLinkedin, IoLogoGithub } from "react-icons/io5";
+import {
+    IoLogoWhatsapp,
+    IoLogoLinkedin,
+    IoLogoGithub
+} from "react-icons/io5";
+
+import { HiOutlineDownload } from "react-icons/hi";
 
 import Logo from "../../assets/logo.png"
 
 import {
+    DownloadCurriculumLink,
     Header,
     Li,
     Links,
@@ -17,6 +24,15 @@ function DefaultHeader() {
 
     const anotherTab = (url) => {
         window.open(url, '_blank')
+    }
+
+    const handleDownload = () => {
+        const link = document.createElement('a')
+        link.href = 'curriculo.pdf'
+        link.download = 'Nicollas_Almeida_Lopes Desenvolvedor_Front-End.pdf'
+        document.body.appendChild(link)
+        link.click()
+        document.body.removeChild(link)
     }
     return (
         <Header>
@@ -42,6 +58,13 @@ function DefaultHeader() {
                     <IoLogoGithub />
                 </SocialMediaButton>
             </Ul>
+
+            <DownloadCurriculumLink
+                onClick={handleDownload}
+            >
+                <HiOutlineDownload />
+                Baixar CV
+            </DownloadCurriculumLink>
         </Header>
     )
 }

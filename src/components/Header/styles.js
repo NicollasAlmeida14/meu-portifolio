@@ -93,3 +93,31 @@ export const SocialMediaButton = styled.button`
         transform: translateY(0);
     }
 `
+
+export const DownloadCurriculumLink = styled.p`
+    cursor: pointer;
+    position: relative;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+
+&::after {
+    content: '';
+    width: 0;
+    background: linear-gradient(135deg, #6F00FF, #00F0FF);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    transition: width 0.5s ease;
+}
+
+&:hover::after {
+    width: 100%;
+}
+
+&:active{
+    opacity: 0.6;
+}
+`
