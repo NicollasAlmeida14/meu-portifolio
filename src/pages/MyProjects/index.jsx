@@ -188,6 +188,7 @@ function MyProjects() {
                     <ProjectShowcaseContainer>
                         <img
                             src={AnimationCreatorProject}
+                            alt="Imagem do projeto"
                             loading='lazy'
                         />
 
@@ -264,6 +265,7 @@ function MyProjects() {
                     <ProjectShowcaseContainer>
                         <img
                             src={DonaGeProject}
+                            alt="Imagem do projeto"
                             loading='lazy'
                         />
 
@@ -340,6 +342,7 @@ function MyProjects() {
                     <ProjectShowcaseContainer>
                         <img
                             src={UserRegisterProject}
+                            alt="Imagem do projeto"
                             loading='lazy'
                         />
 
@@ -417,6 +420,7 @@ function MyProjects() {
                     <ProjectShowcaseContainer>
                         <img
                             src={PassWaveProject}
+                            alt="Imagem do projeto"
                             loading='lazy'
                         />
 
@@ -487,6 +491,7 @@ function MyProjects() {
                     <ProjectShowcaseContainer>
                         <img
                             src={CurrencyConverterProject}
+                            alt="Imagem do projeto"
                             loading='lazy'
                         />
 
@@ -557,6 +562,7 @@ function MyProjects() {
                     <ProjectShowcaseContainer>
                         <img
                             src={JokenpoProject}
+                            alt="Imagem do projeto"
                             loading='lazy'
                         />
 
@@ -627,6 +633,7 @@ function MyProjects() {
                     <ProjectShowcaseContainer>
                         <img
                             src={SuperMarioProject}
+                            alt="Imagem do projeto"
                             loading='lazy'
                         />
 
@@ -697,6 +704,7 @@ function MyProjects() {
                     <ProjectShowcaseContainer>
                         <img
                             src={DevSorteioProject}
+                            alt="Imagem do projeto"
                             loading='lazy'
                         />
 
@@ -762,6 +770,7 @@ function MyProjects() {
                     <ProjectShowcaseContainer>
                         <img
                             src={StopwatchProject}
+                            alt="Imagem do projeto"
                             loading='lazy'
                         />
 
@@ -827,6 +836,7 @@ function MyProjects() {
                     <ProjectShowcaseContainer>
                         <img
                             src={TeslaProject}
+                            alt="Imagem do projeto"
                             loading='lazy'
                         />
 

@@ -47,6 +47,7 @@ function Home() {
           <h3>Desenvolvedor Front-End</h3>
           <img
             src={MyFoto}
+            alt="Foto-Nicollas-Almeida Lopes"
             loading='lazy'
           />
         </InfoDiv>

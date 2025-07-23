@@ -63,6 +63,7 @@ function MyCertificates() {
 
                     <img
                         src={FirstCerticate}
+                        alt="Imagem do certificado de HTML, CSS, Git e GitHub"
                         loading='lazy'
                     />
                 </CertficateSection>
@@ -86,6 +87,7 @@ function MyCertificates() {
 
                     <img
                         src={SecondCertificate}
+                        alt="Imagem do certificado de JavaScript intermediário"
                         loading='lazy'
                     />
                 </CertficateSection>
@@ -109,6 +111,7 @@ function MyCertificates() {
 
                     <img
                         src={ThirdCerticate}
+                        alt="Imagem do certificado de Node.Js e JavaScript avançado"
                         loading='lazy'
                     />
                 </CertficateSection>
@@ -132,6 +135,7 @@ function MyCertificates() {
 
                     <img
                         src={FourthCerticate}
+                        alt="Imagem do certificado de React.Js e CSS avançado"
                         loading='lazy'
                     />
                 </CertficateSection>
