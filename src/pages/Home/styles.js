@@ -16,17 +16,15 @@ export const Container = styled.div`
     min-height: 100vh;
     width: 100%;
     overflow-x: hidden;
-    display: flex;
-    flex-direction: column;
 `
 
 export const Main = styled.main`
     display: grid;
     grid-template-columns: 1fr 35%;
     align-items: center;
-    margin: 30px 0;
+    justify-content: center;
+    padding-top: 5rem;
     gap: 1rem;
-    padding: 1rem;
     flex: 1;
 
     @media (max-width: 1020px) { 
@@ -39,18 +37,24 @@ export const AboutMeDiv = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 1.5rem;
+    margin-top: 1.5rem;
     gap: 1rem;
 
     p {
        font-weight: 500;
        font-size: 17px;
-       text-align: justify;
+       text-align: center;
     }
 
     span {
         font-weight: 700;
         font-size: 18px;
+    }
+
+    img {
+        width: 50%;
     }
 
     @media (max-width: 1025px) { 
@@ -66,11 +70,11 @@ export const InfoDiv = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 8px;
+    justify-content: center;
     gap: 0.7rem;
     
     img {
-        height: 250px;
+        height: 300px;
         border-radius: 50px;
         box-shadow: 4px 5px 4px 2px rgba(0,21,555);
         border: 3px solid rgba(9, 9, 121, 1);
@@ -79,7 +83,6 @@ export const InfoDiv = styled.div`
 
     h3 {
         font-size: 1.5rem;
-
     }
 
     @media (max-width: 1025px) {
