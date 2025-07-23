@@ -186,7 +186,10 @@ function MyProjects() {
                     </ProjectDescriptionContainer>
 
                     <ProjectShowcaseContainer>
-                        <img src={AnimationCreatorProject} />
+                        <img
+                            src={AnimationCreatorProject}
+                            loading='lazy'
+                        />
 
                         <ToolsInfoContainer>
                             <ToolsTitle>Principais ferramentas utilizadas</ToolsTitle>
@@ -259,7 +262,10 @@ function MyProjects() {
                     </ProjectDescriptionContainer>
 
                     <ProjectShowcaseContainer>
-                        <img src={DonaGeProject} />
+                        <img
+                            src={DonaGeProject}
+                            loading='lazy'
+                        />
 
                         <ToolsInfoContainer>
                             <ToolsTitle>Principais ferramentas utilizadas</ToolsTitle>
@@ -332,7 +338,10 @@ function MyProjects() {
                     </ProjectDescriptionContainer>
 
                     <ProjectShowcaseContainer>
-                        <img src={UserRegisterProject} />
+                        <img
+                            src={UserRegisterProject}
+                            loading='lazy'
+                        />
 
                         <ToolsInfoContainer>
                             <ToolsTitle>Principais ferramentas utilizadas</ToolsTitle>
@@ -406,7 +415,10 @@ function MyProjects() {
                     </ProjectDescriptionContainer>
 
                     <ProjectShowcaseContainer>
-                        <img src={PassWaveProject} />
+                        <img
+                            src={PassWaveProject}
+                            loading='lazy'
+                        />
 
                         <ToolsInfoContainer>
                             <ToolsTitle>Principais ferramentas utilizadas</ToolsTitle>
@@ -473,7 +485,10 @@ function MyProjects() {
                     </ProjectDescriptionContainer>
 
                     <ProjectShowcaseContainer>
-                        <img src={CurrencyConverterProject} />
+                        <img
+                            src={CurrencyConverterProject}
+                            loading='lazy'
+                        />
 
                         <ToolsInfoContainer>
                             <ToolsTitle>Principais ferramentas utilizadas</ToolsTitle>
@@ -540,7 +555,10 @@ function MyProjects() {
                     </ProjectDescriptionContainer>
 
                     <ProjectShowcaseContainer>
-                        <img src={JokenpoProject} />
+                        <img
+                            src={JokenpoProject}
+                            loading='lazy'
+                        />
 
                         <ToolsInfoContainer>
                             <ToolsTitle>Principais ferramentas utilizadas</ToolsTitle>
@@ -607,7 +625,10 @@ function MyProjects() {
                     </ProjectDescriptionContainer>
 
                     <ProjectShowcaseContainer>
-                        <img src={SuperMarioProject} />
+                        <img
+                            src={SuperMarioProject}
+                            loading='lazy'
+                        />
 
                         <ToolsInfoContainer>
                             <ToolsTitle>Principais ferramentas utilizadas</ToolsTitle>
@@ -674,7 +695,10 @@ function MyProjects() {
                     </ProjectDescriptionContainer>
 
                     <ProjectShowcaseContainer>
-                        <img src={DevSorteioProject} />
+                        <img
+                            src={DevSorteioProject}
+                            loading='lazy'
+                        />
 
                         <ToolsInfoContainer>
                             <ToolsTitle>Principais ferramentas utilizadas</ToolsTitle>
@@ -736,7 +760,10 @@ function MyProjects() {
                     </ProjectDescriptionContainer>
 
                     <ProjectShowcaseContainer>
-                        <img src={StopwatchProject} />
+                        <img
+                            src={StopwatchProject}
+                            loading='lazy'
+                        />
 
                         <ToolsInfoContainer>
                             <ToolsTitle>Principais ferramentas utilizadas</ToolsTitle>
@@ -798,7 +825,10 @@ function MyProjects() {
                     </ProjectDescriptionContainer>
 
                     <ProjectShowcaseContainer>
-                        <img src={TeslaProject} />
+                        <img
+                            src={TeslaProject}
+                            loading='lazy'
+                        />
 
                         <ToolsInfoContainer>
                             <ToolsTitle>Principais ferramentas utilizadas</ToolsTitle>

@@ -61,7 +61,10 @@ function MyCertificates() {
                         </RealizatedProjects>
                     </CertificateDescriptionContainer>
 
-                    <img src={FirstCerticate} />
+                    <img
+                        src={FirstCerticate}
+                        loading='lazy'
+                    />
                 </CertficateSection>
 
                 <CertficateSection
@@ -81,7 +84,10 @@ function MyCertificates() {
                         </RealizatedProjects>
                     </CertificateDescriptionContainer>
 
-                    <img src={SecondCertificate} />
+                    <img
+                        src={SecondCertificate}
+                        loading='lazy'
+                    />
                 </CertficateSection>
 
                 <CertficateSection
@@ -101,7 +107,10 @@ function MyCertificates() {
                         </RealizatedProjects>
                     </CertificateDescriptionContainer>
 
-                    <img src={ThirdCerticate} />
+                    <img
+                        src={ThirdCerticate}
+                        loading='lazy'
+                    />
                 </CertficateSection>
 
                 <CertficateSection
@@ -121,7 +130,10 @@ function MyCertificates() {
                         </RealizatedProjects>
                     </CertificateDescriptionContainer>
 
-                    <img src={FourthCerticate} />
+                    <img
+                        src={FourthCerticate}
+                        loading='lazy'
+                    />
                 </CertficateSection>
 
             </CertificatesContainer>

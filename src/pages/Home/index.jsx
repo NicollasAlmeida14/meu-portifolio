@@ -38,13 +38,17 @@ function Home() {
           <img
             src="https://github-readme-stats.vercel.app/api/top-langs/?username=nicollasalmeida14&layout=compact&theme=algolia  "
             alt="Linguagens mais utilizadas"
+            loading='lazy'
           />
         </AboutMeDiv>
 
         <InfoDiv>
           <SubTitle>Nicollas Almeida Lopes</SubTitle>
           <h3>Desenvolvedor Front-End</h3>
-          <img src={MyFoto} />
+          <img
+            src={MyFoto}
+            loading='lazy'
+          />
         </InfoDiv>
       </Main>
 

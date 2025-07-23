@@ -1,15 +1,4 @@
-import styled, { keyframes } from "styled-components";
-
-const boxShadowEffect = keyframes`
-    0%, 100% {
-        box-shadow: 4px 5px 4px 2px rgba(0,21,555);
-    }
-
-    50% {
-        box-shadow: none;
-        transform:  scale(0.9);
-    }
-`
+import styled from "styled-components";
 
 export const Container = styled.div`
     background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
@@ -35,7 +24,6 @@ export const CertficateSection = styled.section`
     img {
         width: 100%;
         border-radius: 10px;
-        animation: ${boxShadowEffect} 3s infinite ease;
     }
 `
 

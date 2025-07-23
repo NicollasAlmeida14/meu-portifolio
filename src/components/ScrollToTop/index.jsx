@@ -7,6 +7,12 @@ export default function ScrollToTop({ children }) {
 
     useEffect(() => {
         window.scrollTo(0, 0)
+
+        const handleBeforeUnload = () => {
+            window.scrollTo(0, 0)
+        }
+
+        window.addEventListener('beforeunload', handleBeforeUnload)
     }, [pathname])
 
     return children
