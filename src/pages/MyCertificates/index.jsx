@@ -67,7 +67,7 @@ function MyCertificates() {
                 <CertficateSection
                     as={motion.div}
                     ref={refSecond}
-                    initial={{ opacity: 0, x: -50 }}
+                    initial={{ opacity: 0, x: 50 }}
                     animate={inViewSecond ? { opacity: 1, x: 0 } : {}}
                     transition={{ ease: 'easeIn', duration: 0.8 }}
                 >
@@ -107,7 +107,7 @@ function MyCertificates() {
                 <CertficateSection
                     as={motion.div}
                     ref={refFourth}
-                    initial={{ opacity: 0, x: -50 }}
+                    initial={{ opacity: 0, x: 50 }}
                     animate={inViewFourth ? { opacity: 1, x: 0 } : {}}
                     transition={{ ease: 'easeIn', duration: 0.8 }}
                 >
