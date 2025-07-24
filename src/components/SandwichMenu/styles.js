@@ -22,7 +22,7 @@ export const Menu = styled.div`
     right: 0;
     top: 40px;
     padding: 1rem;
-    background-color: rgba(26, 26, 46);
+    background-color: #ffffff;
     border-radius: 10px;
     display: ${({ $open }) => $open ? 'flex' : 'none'};
     flex-direction: column;
@@ -33,4 +33,5 @@ export const Menu = styled.div`
 export const MenuItem = styled.p`
     margin: 0 auto;
     font-weight: bold;
+    color: rgba(26, 26, 46);
 ` 

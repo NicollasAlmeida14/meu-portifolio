@@ -19,6 +19,10 @@ export const Header = styled.header`
         &:hover {
             box-shadow: 0px 0px 10px 5px rgba(0,21,555);
         }
+
+        @media (max-width: 768px) {
+            box-shadow: none;
+        }
     }
 `
 
@@ -27,33 +31,23 @@ export const Links = styled.p`
     position: relative;
     color: #ffffff;
 
-&::after {
-    content: '';
-    width: 0;
-    background: linear-gradient(135deg, #6F00FF, #00F0FF);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    transition: width 0.5s ease;
-}
+    &::after {
+        content: '';
+        width: 0;
+        background: linear-gradient(135deg, #6F00FF, #00F0FF);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        transition: width 0.5s ease;
+    }
 
-&:hover::after {
-    width: 100%;
-}
+    &:hover::after {
+        width: 100%;
+    }
 
-&:active{
-    opacity: 0.6;
-}
-
-    @media (max-width: 1025px) { 
-        &:hover::after {
-            width: 0;
-        }
-
-        &:active{
-            opacity: 1;
-        }
+    &:active{
+        opacity: 0.6;
     }
 `
 
@@ -61,11 +55,8 @@ export const Ul = styled.ul`
     display: flex;
     gap: 1rem;
 
-    @media (max-width: 1020px) { 
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-        align-items: center;   
+    @media (max-width: 768px) { 
+        display: none;
     }
 `
 
@@ -89,7 +80,7 @@ export const SocialMediaButton = styled.button`
         transition: 0.3s ease-in-out;
     }
 
-     &:active {
+    &:active {
         transform: translateY(0);
     }
 `
@@ -102,22 +93,26 @@ export const DownloadCurriculumLink = styled.p`
     align-items: center;
     gap: 0.2rem;
 
-&::after {
-    content: '';
-    width: 0;
-    background: linear-gradient(135deg, #6F00FF, #00F0FF);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    transition: width 0.5s ease;
-}
+    &::after {
+        content: '';
+        width: 0;
+        background: linear-gradient(135deg, #6F00FF, #00F0FF);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        transition: width 0.5s ease;
+    }
 
-&:hover::after {
-    width: 100%;
-}
+    &:hover::after {
+        width: 100%;
+    }
 
-&:active{
-    opacity: 0.6;
-}
+    &:active{
+        opacity: 0.6;
+    }
+
+    @media (max-width: 768px) {
+        display: none;
+    }
 `
