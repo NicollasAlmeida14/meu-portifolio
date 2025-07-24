@@ -14,8 +14,6 @@ export const Container = styled.div`
     background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
     color: #fff;
     min-height: 100vh;
-    width: 100%;
-    overflow-x: hidden;
 `
 
 export const Main = styled.main`
@@ -28,8 +26,8 @@ export const Main = styled.main`
     flex: 1;
 
     @media (max-width: 1020px) { 
-        grid-template-columns: 1fr;
-        align-items: center;
+        display: flex;
+        flex-direction: column;
     }
 `
 
@@ -58,11 +56,11 @@ export const AboutMeDiv = styled.div`
     }
 
     @media (max-width: 1025px) { 
-    padding: 0.5rem;
+        padding: 1rem;
 
-    p {
-        text-align: center;
-    }
+        img {
+            width: 70%;
+        }
     }
 `
 
@@ -86,6 +84,8 @@ export const InfoDiv = styled.div`
     }
 
     @media (max-width: 1025px) {
+        padding-bottom: 1.5rem;
+
         img {
             animation: none;
         }

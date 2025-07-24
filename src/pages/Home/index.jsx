@@ -1,6 +1,5 @@
 import MyFoto from "../../assets/nicollas.png"
 
-// import Button from "../../components/Button"
 import DefaultHeader from "../../components/Header"
 
 import { motion } from "framer-motion"
