@@ -10,6 +10,8 @@ import { HiOutlineDownload } from "react-icons/hi";
 
 import Logo from "../../assets/logo.png"
 
+import SandwichMenu from "../SandwichMenu";
+
 import {
     DownloadCurriculumLink,
     Header,
@@ -65,6 +67,8 @@ function DefaultHeader() {
                 <HiOutlineDownload />
                 Baixar CV
             </DownloadCurriculumLink>
+
+            <SandwichMenu />
         </Header>
     )
 }
