@@ -47,8 +47,8 @@ function MyCertificates() {
                 <CertficateSection
                     as={motion.div}
                     ref={refFirst}
-                    initial={{ opacity: 0, x: -50 }}
-                    animate={inViewFirst ? { opacity: 1, x: 0 } : {}}
+                    initial={{ opacity: 0, scale: 0.5 }}
+                    animate={inViewFirst ? { opacity: 1, scale: 1 } : {}}
                     transition={{ ease: 'easeIn', duration: 0.8 }}
                 >
                     <CertificateDescriptionContainer>
@@ -71,8 +71,8 @@ function MyCertificates() {
                 <CertficateSection
                     as={motion.div}
                     ref={refSecond}
-                    initial={{ opacity: 0, x: 50 }}
-                    animate={inViewSecond ? { opacity: 1, x: 0 } : {}}
+                    initial={{ opacity: 0, scale: 0.5 }}
+                    animate={inViewSecond ? { opacity: 1, scale: 1 } : {}}
                     transition={{ ease: 'easeIn', duration: 0.8 }}
                 >
                     <CertificateDescriptionContainer>
@@ -95,8 +95,8 @@ function MyCertificates() {
                 <CertficateSection
                     as={motion.div}
                     ref={refThird}
-                    initial={{ opacity: 0, x: -50 }}
-                    animate={inViewThird ? { opacity: 1, x: 0 } : {}}
+                    initial={{ opacity: 0, scale: 0.5 }}
+                    animate={inViewThird ? { opacity: 1, scale: 1 } : {}}
                     transition={{ ease: 'easeIn', duration: 0.8 }}
                 >
                     <CertificateDescriptionContainer>
@@ -119,8 +119,8 @@ function MyCertificates() {
                 <CertficateSection
                     as={motion.div}
                     ref={refFourth}
-                    initial={{ opacity: 0, x: 50 }}
-                    animate={inViewFourth ? { opacity: 1, x: 0 } : {}}
+                    initial={{ opacity: 0, scale: 0.5 }}
+                    animate={inViewFourth ? { opacity: 1, scale: 1 } : {}}
                     transition={{ ease: 'easeIn', duration: 0.8 }}
                 >
                     <CertificateDescriptionContainer>
