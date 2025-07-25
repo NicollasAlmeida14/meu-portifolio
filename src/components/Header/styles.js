@@ -20,8 +20,10 @@ export const Header = styled.header`
             box-shadow: 0px 0px 10px 5px rgba(0,21,555);
         }
 
-        @media (max-width: 768px) {
-            box-shadow: none;
+        @media (max-width: 1024px) {
+            &:hover {
+                box-shadow: none;
+            }
         }
     }
 `
