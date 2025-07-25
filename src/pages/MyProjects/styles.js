@@ -20,6 +20,11 @@ export const ProjectSection = styled.section`
     gap: 2rem;
     padding: 1.5rem 2rem 3rem;
     margin-bottom: 2rem;
+
+    @media (max-width: 1024px) {
+        display: flex;
+        flex-direction: column;
+    }
 `
 
 export const ProjectDescriptionContainer = styled.div`
@@ -37,12 +42,20 @@ export const ProjectDescriptionContainer = styled.div`
 export const ProjectName = styled.h1`
     text-align: center;
     font-size: 2rem;
+
+    @media (max-width: 610px) {
+        font-size: 1.5rem;
+    }
 `
 
 export const ProjectDescription = styled.p`
     font-size: 1.2rem;
     font-weight: 500;
     text-align: center;
+
+     @media (max-width: 610px) {
+        font-size: 1.1rem;
+    }
 `
 
 export const ProjectFunctionalityContainer = styled.div`
@@ -55,6 +68,10 @@ export const ProjectFunctionalityContainer = styled.div`
 
 export const FunctionalityTitle = styled.h2`
     font-size: 1.58rem;
+
+    @media (max-width: 610px) {
+        font-size: 1.25rem;
+    }
 `
 
 export const Ul = styled.ul`
@@ -68,6 +85,10 @@ export const Li = styled.li`
     display: flex;
     align-items: center;
     gap: 0.28rem;
+
+    @media (max-width: 610px) {
+        font-size: 0.85rem;
+    }
 `
 
 export const LinksContainer = styled.div`
@@ -76,6 +97,12 @@ export const LinksContainer = styled.div`
     justify-content: space-around;
     border-top: solid 1.5px #ffffff;
     padding-top: 1rem;
+
+    @media (max-width: 645px) {
+        flex-direction: column;
+        gap: 0.5rem;
+        justify-content: center;
+    }
     
     button {
         font-size: 1.1rem;
@@ -96,6 +123,21 @@ export const LinksContainer = styled.div`
         &:active {
             opacity: 0.6;
         }
+
+        @media (max-width: 1024px) {
+            &:hover {
+                color: #000080;
+                transition: none;
+            }
+
+            &:active {
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 645px) {
+            font-size: 1rem;
+        }
     }
 `
 
@@ -108,6 +150,10 @@ export const ProjectShowcaseContainer = styled.div`
     img {
         height: 100%;
         border-radius: 10px;
+
+        @media (max-width: 1024px) {
+            width: 100%;
+        }
     }
 `
 
@@ -122,22 +168,40 @@ export const ToolsInfoContainer = styled.div`
     div {
         display: flex;
         gap: 1rem;
-      
-        p {
-            font-size: 3.5rem;
-            display: flex;
-            padding: 0.3rem;
-            border-radius: 10px;
-            transition: all 0.3s ease-in-out;
+    }
+
+    p {
+        font-size: 3.5rem;
+        display: flex;
+        padding: 0.3rem;
+        border-radius: 10px;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            background: linear-gradient(135deg, #6F00FF, #00F0FF);
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 1024px) {
+            transition: none;
 
             &:hover {
-                background: linear-gradient(135deg, #6F00FF, #00F0FF);
-                transform: scale(1.1);
+                background: none;
+                transform: scale(1);
             }
+        }
+
+        @media (max-width: 610px) {
+            font-size: 2.5rem;
         }
     }
 `
 
 export const ToolsTitle = styled.h2`
     font-size: 1.58rem;
+    text-align: center;
+
+    @media (max-width: 610px) {
+        font-size: 1.2rem;
+    }
 `

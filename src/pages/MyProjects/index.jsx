@@ -178,6 +178,7 @@ function MyProjects() {
                         <LinksContainer>
                             <button
                                 onClick={() => anotherTab('https://github.com/NicollasAlmeida14/criador-de-animacoes')}
+                                type='button'
                             >
                                 <LuExternalLink />
                                 Repositório
@@ -248,6 +249,7 @@ function MyProjects() {
                         <LinksContainer>
                             <button
                                 onClick={() => anotherTab('https://loja-dona-ge.vercel.app/')}
+                                type='button'
                             >
                                 <LuExternalLink />
                                 Projeto
@@ -255,6 +257,7 @@ function MyProjects() {
 
                             <button
                                 onClick={() => anotherTab('https://github.com/NicollasAlmeida14/loja-dona-ge')}
+                                type='button'
                             >
                                 <LuExternalLink />
                                 Repositório
@@ -318,6 +321,7 @@ function MyProjects() {
                         <LinksContainer>
                             <button
                                 onClick={() => anotherTab('https://cadastro-de-usuarios-front.vercel.app/')}
+                                type='button'
                             >
                                 <LuExternalLink />
                                 Projeto
@@ -325,6 +329,7 @@ function MyProjects() {
 
                             <button
                                 onClick={() => anotherTab('https://github.com/NicollasAlmeida14/cadastro-de-usuarios-front')}
+                                type='button'
                             >
                                 <LuExternalLink />
                                 Repositório Front-End
@@ -332,6 +337,7 @@ function MyProjects() {
 
                             <button
                                 onClick={() => anotherTab('https://github.com/NicollasAlmeida14/cadastro-de-usuarios-back')}
+                                type='button'
                             >
                                 <LuExternalLink />
                                 Repositório Back-End
@@ -403,6 +409,7 @@ function MyProjects() {
                         <LinksContainer>
                             <button
                                 onClick={() => anotherTab('https://nicollasalmeida14.github.io/passwave-gerador-de-senhas/')}
+                                type='button'
                             >
                                 <LuExternalLink />
                                 Projeto
@@ -410,6 +417,7 @@ function MyProjects() {
 
                             <button
                                 onClick={() => anotherTab('https://github.com/NicollasAlmeida14/passwave-gerador-de-senhas')}
+                                type='button'
                             >
                                 <LuExternalLink />
                                 Repositório
@@ -474,6 +482,7 @@ function MyProjects() {
                         <LinksContainer>
                             <button
                                 onClick={() => anotherTab('https://nicollasalmeida14.github.io/conversor-de-moedas/')}
+                                type='button'
                             >
                                 <LuExternalLink />
                                 Projeto
@@ -481,6 +490,7 @@ function MyProjects() {
 
                             <button
                                 onClick={() => anotherTab('https://github.com/NicollasAlmeida14/conversor-de-moedas')}
+                                type='button'
                             >
                                 <LuExternalLink />
                                 Repositório
@@ -545,6 +555,7 @@ function MyProjects() {
                         <LinksContainer>
                             <button
                                 onClick={() => anotherTab('https://nicollasalmeida14.github.io/jokenpo/')}
+                                type='button'
                             >
                                 <LuExternalLink />
                                 Projeto
@@ -552,6 +563,7 @@ function MyProjects() {
 
                             <button
                                 onClick={() => anotherTab('https://github.com/NicollasAlmeida14/jokenpo')}
+                                type='button'
                             >
                                 <LuExternalLink />
                                 Repositório
@@ -616,6 +628,7 @@ function MyProjects() {
                         <LinksContainer>
                             <button
                                 onClick={() => anotherTab('https://nicollasalmeida14.github.io/super-mario-bros/')}
+                                type='button'
                             >
                                 <LuExternalLink />
                                 Projeto
@@ -623,6 +636,7 @@ function MyProjects() {
 
                             <button
                                 onClick={() => anotherTab('https://github.com/NicollasAlmeida14/super-mario-bros')}
+                                type='button'
                             >
                                 <LuExternalLink />
                                 Repositório
@@ -687,6 +701,7 @@ function MyProjects() {
                         <LinksContainer>
                             <button
                                 onClick={() => anotherTab('https://nicollasalmeida14.github.io/dev-sorteio/')}
+                                type='button'
                             >
                                 <LuExternalLink />
                                 Projeto
@@ -694,6 +709,7 @@ function MyProjects() {
 
                             <button
                                 onClick={() => anotherTab('https://github.com/NicollasAlmeida14/dev-sorteio')}
+                                type='button'
                             >
                                 <LuExternalLink />
                                 Repositório
@@ -753,6 +769,7 @@ function MyProjects() {
                         <LinksContainer>
                             <button
                                 onClick={() => anotherTab('https://nicollasalmeida14.github.io/cronometro/')}
+                                type='button'
                             >
                                 <LuExternalLink />
                                 Projeto
@@ -760,6 +777,7 @@ function MyProjects() {
 
                             <button
                                 onClick={() => anotherTab('https://github.com/NicollasAlmeida14/cronometro')}
+                                type='button'
                             >
                                 <LuExternalLink />
                                 Repositório
@@ -819,6 +837,7 @@ function MyProjects() {
                         <LinksContainer>
                             <button
                                 onClick={() => anotherTab('https://nicollasalmeida14.github.io/tesla/')}
+                                type='button'
                             >
                                 <LuExternalLink />
                                 Projeto
@@ -826,6 +845,7 @@ function MyProjects() {
 
                             <button
                                 onClick={() => anotherTab('https://github.com/NicollasAlmeida14/tesla')}
+                                type='button'
                             >
                                 <LuExternalLink />
                                 Repositório
