@@ -48,7 +48,7 @@ function DefaultHeader() {
             </Ul>
 
             <Ul>
-                <SocialMediaButton onClick={() => anotherTab()} type="button">
+                <SocialMediaButton onClick={() => anotherTab('https://wa.me/5511969158501')} type="button">
                     <IoLogoWhatsapp />
                 </SocialMediaButton>
 
