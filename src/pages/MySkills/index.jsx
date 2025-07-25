@@ -1,6 +1,7 @@
 import { tools } from "../../data/skillsToolsData"
 
 import DefaultHeader from "../../components/Header"
+import DefaultFooter from "../../components/Footer"
 
 import { Swiper, SwiperSlide } from "swiper/react"
 import 'swiper/css'
@@ -167,6 +168,8 @@ function MySkills() {
                     </Swiper>
                 </SkillsSection>
             </SkillsContainer>
+
+            <DefaultFooter />
         </Container>
     )
 }

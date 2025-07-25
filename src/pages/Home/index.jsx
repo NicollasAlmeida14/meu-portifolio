@@ -1,6 +1,7 @@
 import MyFoto from "../../assets/nicollas.png"
 
 import DefaultHeader from "../../components/Header"
+import DefaultFooter from "../../components/Footer"
 
 import { motion } from "framer-motion"
 
@@ -52,6 +53,7 @@ function Home() {
         </InfoDiv>
       </Main>
 
+      <DefaultFooter />
     </Container>
   )
 }

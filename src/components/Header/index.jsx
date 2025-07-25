@@ -48,15 +48,25 @@ function DefaultHeader() {
             </Ul>
 
             <Ul>
-                <SocialMediaButton onClick={() => anotherTab('https://wa.me/5511969158501')} type="button">
+                <SocialMediaButton
+                    onClick={() => anotherTab('https://wa.me/5511969158501')}
+                    type='button'
+                >
                     <IoLogoWhatsapp />
                 </SocialMediaButton>
 
-                <SocialMediaButton onClick={() => anotherTab('https://www.linkedin.com/in/nicollas-almeida-lopes/')} type="button">
+                <SocialMediaButton
+                    onClick=
+                    {() => anotherTab('https://www.linkedin.com/in/nicollas-almeida-lopes/')}
+                    type='button'
+                >
                     <IoLogoLinkedin />
                 </SocialMediaButton>
 
-                <SocialMediaButton onClick={() => anotherTab('https://github.com/NicollasAlmeida14')} type="button">
+                <SocialMediaButton
+                    onClick={() => anotherTab('https://github.com/NicollasAlmeida14')}
+                    type='button'
+                >
                     <IoLogoGithub />
                 </SocialMediaButton>
             </Ul>

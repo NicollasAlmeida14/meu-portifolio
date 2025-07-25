@@ -4,6 +4,7 @@ import ThirdCerticate from "../../assets/certificado-nodejs.png"
 import FourthCerticate from "../../assets/certificado-react.png"
 
 import DefaultHeader from "../../components/Header";
+import DefaultFooter from "../../components/Footer";
 
 import { motion } from 'framer-motion'
 
@@ -101,6 +102,8 @@ function MyCertificates() {
                 </CertficateSection>
 
             </CertificatesContainer>
+
+            <DefaultFooter/>
         </Container>
     )
 }

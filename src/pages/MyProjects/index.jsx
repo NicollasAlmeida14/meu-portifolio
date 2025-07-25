@@ -10,6 +10,7 @@ import DevSorteioProject from "../../assets/projeto-dev-sorteio.png"
 import StopwatchProject from "../../assets/projeto-cronometro.png"
 
 import DefaultHeader from '../../components/Header'
+import DefaultFooter from "../../components/Footer"
 
 import {
     IoLogoHtml5,
@@ -873,6 +874,7 @@ function MyProjects() {
                 </ProjectSection>
             </ProjectsContainer>
 
+            <DefaultFooter />
         </Container>
     )
 }
