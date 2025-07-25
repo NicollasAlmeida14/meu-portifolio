@@ -18,5 +18,12 @@ export const GlobalStyles = createGlobalStyle`
          &:active {
             scale: 1;
         }
+
+        @media (max-width: 1024px) {
+            &:hover {
+                scale: 1;
+                transition: none;
+            }
+        }
     }
 `
