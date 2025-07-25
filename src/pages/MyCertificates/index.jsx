@@ -6,7 +6,6 @@ import FourthCerticate from "../../assets/certificado-react.png"
 import DefaultHeader from "../../components/Header";
 
 import { motion } from 'framer-motion'
-import { useInView } from 'react-intersection-observer'
 
 import {
     CertficateSection,
@@ -18,39 +17,18 @@ import {
 } from "./styles";
 
 function MyCertificates() {
-    const { ref: refFirst, inView: inViewFirst } = useInView({
-        triggerOnce: true,
-        threshold: 0.2
-    })
-
-    const { ref: refSecond, inView: inViewSecond } = useInView({
-        triggerOnce: true,
-        threshold: 0.2
-    })
-
-    const { ref: refThird, inView: inViewThird } = useInView({
-        triggerOnce: true,
-        threshold: 0.2
-    })
-
-    const { ref: refFourth, inView: inViewFourth } = useInView({
-        triggerOnce: true,
-        threshold: 0.2
-    })
-
     return (
-        <Container>
+        <Container
+            as={motion.div}
+            initial={{ opacity: 0, y: -30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ ease: 'easeIn', duration: 0.8 }}
+        >
             <DefaultHeader />
 
             <CertificatesContainer>
 
-                <CertficateSection
-                    as={motion.div}
-                    ref={refFirst}
-                    initial={{ opacity: 0, scale: 0.5 }}
-                    animate={inViewFirst ? { opacity: 1, scale: 1 } : {}}
-                    transition={{ ease: 'easeIn', duration: 0.8 }}
-                >
+                <CertficateSection>
                     <CertificateDescriptionContainer>
                         <CertificateDescription>
                             Certicado correspondente ao módulo de HTML, CSS, Git e GitHub na formação Full-Stack do DevClub. Neste módulo, aprendi os fundamentos de desenvolvimento web, incluindo a estruturação de páginas com HTML, estilização com CSS e controle de versão com Git e GitHub.
@@ -68,13 +46,7 @@ function MyCertificates() {
                     />
                 </CertficateSection>
 
-                <CertficateSection
-                    as={motion.div}
-                    ref={refSecond}
-                    initial={{ opacity: 0, scale: 0.5 }}
-                    animate={inViewSecond ? { opacity: 1, scale: 1 } : {}}
-                    transition={{ ease: 'easeIn', duration: 0.8 }}
-                >
+                <CertficateSection>
                     <CertificateDescriptionContainer>
                         <CertificateDescription>
                             Certificado correspondente ao módulo de JavaScript Intermediário na formação Full-Stack do DevClub. Neste módulo, aprofundei meus conhecimentos em JavaScript, aprendendo sobre manipulação de DOM, eventos, e conceitos da linguagem.
@@ -92,13 +64,7 @@ function MyCertificates() {
                     />
                 </CertficateSection>
 
-                <CertficateSection
-                    as={motion.div}
-                    ref={refThird}
-                    initial={{ opacity: 0, scale: 0.5 }}
-                    animate={inViewThird ? { opacity: 1, scale: 1 } : {}}
-                    transition={{ ease: 'easeIn', duration: 0.8 }}
-                >
+                <CertficateSection>
                     <CertificateDescriptionContainer>
                         <CertificateDescription>
                             Certificado correspondente ao módulo de Node.js e JavaScript avançado na formação Full-Stack do DevClub. Neste módulo, aprendi a construir uma aplicação backend utilizando Node.js, incluindo a criação de APIs e o gerenciamento de banco de dados.
@@ -116,13 +82,7 @@ function MyCertificates() {
                     />
                 </CertficateSection>
 
-                <CertficateSection
-                    as={motion.div}
-                    ref={refFourth}
-                    initial={{ opacity: 0, scale: 0.5 }}
-                    animate={inViewFourth ? { opacity: 1, scale: 1 } : {}}
-                    transition={{ ease: 'easeIn', duration: 0.8 }}
-                >
+                <CertficateSection>
                     <CertificateDescriptionContainer>
                         <CertificateDescription>
                             Certificado correspondente ao módulo de React e CSS avançado da formação Full-Stack do DevClub. Neste módulo aprendi o uso do display flex e display grid, além de conceitos fundamentais do React.
