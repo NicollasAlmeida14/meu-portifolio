@@ -25,11 +25,12 @@
 <br/>
 
 <h3>## 🛠️ Ferramentas</h3>
-
+<div>
 <img src= "https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" alt= "badge do ReactJs">
 <img src= "https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white" alt= "badge do Vite">
 <img src= "https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white" alt= "badge do Styled Components">
 <img src= "https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white" alt= "badge do React Router">
+</div>
 
 <br/>
 
